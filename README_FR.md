@@ -10,7 +10,7 @@ Cours AutB
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
-> Version 2025, V1.0
+> Version 2026, V1.0
 
 # LAB 01 Introduction à la programmation
 
@@ -66,10 +66,10 @@ CtrlX WORKS est une suite logicielle développée par Bosch Rexroth pour program
 Elle permet la gestion des appareils, qu'ils soient réels ou virtuels, connectés au PC de développement.
 ctrlX WORKS inclut un environnement de développement intégré (IDE) pour la programmation selon les langages décrits dans la norme IEC 61131-3 qui se nomme **ctrlX PLC Engineering**.
 
-> Version de CtrlX WORKS utilisée lors de l'écriture de ce document : 1.20.11
+> Version de CtrlX WORKS utilisée lors de l'écriture de ce document : 3.6.3
 
-Lien pour télécharger ctrlX Works :
-[Rexroth Store CtrlX Works 1.20.11](https://community.boschrexroth.com/ctrlx-os-store-apps-oc2pqqwn/post/ctrlx-works-xOJLFLUiK4NGm5H)
+Lien pour télécharger l'environnement de développement :
+[Full development environment for ctrlX OS](https://community.boschrexroth.com/ctrlx-os-store-apps-oc2pqqwn/post/ctrlx-works-xOJLFLUiK4NGm5H?_gl=1*drczh*_ga*MTcwNTI2MzQwNS4xNzcxMjM2MzYz*_ga_1TJGXV7Q4B*czE3NzEyMzYzNjIkbzEkZzEkdDE3NzEyMzY1MzYkajM1JGwwJGgw*_ga_6YFL8JVC3S*czE3NzEyMzYzNjIkbzEkZzEkdDE3NzEyMzY1MzYkajM1JGwwJGgw)
 
 
 <br>
@@ -137,11 +137,11 @@ Quelques caractéristiques clés de Node-RED :
 Afin que Node-RED puisse fonctionner, il est nécessaire d'avoir installé préalablement l'environnement d'exécution JavaScript "Node.js".
 --> [Download Node.js](https://nodejs.org/en/download/current)
 
-L'installation de cet environnement a déjà été effectuée sur les PC du laboratoire d'automatisation.
+Remarque : L'installation de cet environnement a déjà été effectuée sur les PC du laboratoire d'automatisation.
 
 Par contre, **vous devez installer "Node-RED" sur le PC du laboratoire d'automatisation** en suivant la procédure ci-après.
 A la suite de cette installation, votre environnement Node-RED sera installé
-dans votre propre profil utilisateur sous C:\Users[ton_nom_utilisateur].node-red.
+dans votre propre profil utilisateur sous C:\Users\\*Your_Username*\\.node-red.
 
 <br>
 <u>Procédure d'installation</u> :  
@@ -153,14 +153,13 @@ dans votre propre profil utilisateur sous C:\Users[ton_nom_utilisateur].node-red
 
 - Ouvrir "l'invite de commande" (cmd.exe)
 - Entrer la commande : ``npm install -g --unsafe-perm node-red``
-- Vérifier la version de Node.js et de Node-RED avec la commande : node-red --version
 
-Si les versions des logiciels ne s'affichent pas, effectuer à nouveau la procédure d'installation mais en utilisant "Windows PowerShell" au lieu de "l'invite de commande".
 
 <br> 
-2) Démarrer de Node-RED  
+2) Démarrage de Node-RED  
 
 - Ouvrir l'invite de commande (cmd.exe)
+- Entrer la commande : cd C:\Users\\*Your_Username*\\AppData\Roaming\npm
 - Entrer la commande : node-red
 
 <br>
@@ -195,12 +194,12 @@ Si les versions des logiciels ne s'affichent pas, effectuer à nouveau la procé
 Dans la fenêtre de l'invite de commande, appuyer sur Ctrl + C ou fermer la fenètre de l'invite de commande
 
 
-**N.B.** : Après avoir démarré Node-RED pour la première fois, les fichiers de configuration et les flux seront stockés sous : C:\Users\[ton_nom_utilisateur]\.node-red.
+**N.B.** : Après avoir démarré Node-RED pour la première fois, les fichiers de configuration et les flux seront stockés sous : C:\Users\\*Your_Username*\\.node-red.
 
 <br> 
 6) Copier le fichier de base "flows.json" mis à disposition
 
-Remplacer le fichier "flows.json" qui se trouve dans le répertoire C:\Users\[ton_nom_utilisateur]\.node-red par le fichier "flows.json" mise à disposition dans GitLab.
+Remplacer le fichier "flows.json" qui se trouve dans le répertoire C:\Users\\*Your_Username*\\.node-red par le fichier "flows.json" mise à disposition dans Github.
 
 <br>
 7) Redémarrer Node-Red --> voir point 2)
@@ -299,7 +298,7 @@ Pour qu'une variable soit accessible depuis Node-RED, il faut en informer le com
     <figcaption>Configure Symbol Configuration</figcaption>
 </figure>
 
-> Si l'icône **Symbol Configuration** n'est pas présente, il faut l'ajouter en allant dans IDE --> Tab --> Project --> Add Object --> Symbol Configuration...
+> Si l'icône **Symbol Configuration** n'est pas présente, il faut l'ajouter en sélectionnant dans le menu Project --> Add Object --> Symbol Configuration...
 
 
 Lors du prochain téléchargement du programme, la variable "iCount" sera accessible dans le **Data Layer** (*) du CtrlX-Core depuis Node-RED.
@@ -314,6 +313,7 @@ Le Data Layer ne stocke pas directement les données, mais agit comme un interm�
 
 1) Démarrer Node-RED
 - Ouvrir l'invite de commande (cmd.exe)
+- Entrer la commande : cd C:\Users\\*Your_Username*\\AppData\Roaming\npm
 - Entrer la commande : node-red
 
 <br>
@@ -363,7 +363,7 @@ Le Data Layer ne stocke pas directement les données, mais agit comme un interm�
 
 Address : 192.168.0.200
 Username : boschrexroth
-Password : boschrexroth
+Password : Industrie_21
 
 <br>
 
@@ -829,8 +829,5 @@ Pour visualiser le signal :
 Que constatez-vous si vous comparez le signal sinusoidal affiché sur "Node-RED" avec celui affiché avec "Trace" ?
 
 
-# Information
-
-> Sur demande, le logiciel "ctrlX Works" peut être fourni pour une installation sur votre ordinateur portable (Windows uniquement !).
-> 
+ 
 

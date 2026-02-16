@@ -8,48 +8,20 @@
 
 Cours AutB
 
-# This is a quick start for ctrlX PLC
-
-How to check if systems are connected, [at the end of this document](#check-if-system-is-connected).
-
-[Do not forget to power On the conveyor](#conveyor)
-
-## Get Lab from Git
-
-Create a folder AutB in Documents.
-Pin it to Quick Access.
-
-<figure>
-    <img src="./img/QuickAccessToAutB.png"
-         alt="Lost image quick start to AutB">
-    <figcaption>Quick start to AutB</figcaption>
-</figure>
-
-> By default, folder Automation is reserved for Siemens S7.
 
 
-<figure>
-    <img src="./img/CloneWithTortoiseGit.png"
-         alt="Lost image CloneWithTortoiseGit.png">
-    <figcaption>Clone With Tortoise Git</figcaption>
-</figure>
 
-<figure>
-    <img src="./img/SelectSourceAndSetinationForProject.png"
-         alt="Lost image SelectSourceAndSetinationForProject.png">
-    <figcaption>Select Source And Destination For Project (Select lab number)</figcaption>
-</figure>
-
-
-## Load archive from folder and upload program on target
+# Load archive from folder and download program to CtrlX-Core
 
 Launch program ctrlX PLC Engineering
+<br>
 
 <figure>
     <img src="./img/ctrlX PLC Engineering.png"
          alt="Lost image ctrlX PLC Engineering.png">
     <figcaption>ctrlX PLC Engineering.png</figcaption>
 </figure>
+<br>
 
 <figure>
     <img src="./img/StartSystemLoadFromArchive.png"
@@ -57,15 +29,17 @@ Launch program ctrlX PLC Engineering
     <figcaption>AutB Extract From Archive</figcaption>
 </figure>
 
+<br>
 <figure>
-    <img src="./img/StartSystemSelectVersionStudent.png"
-         alt="Lost image StartSystemSelectVersionStudent.png">
+    <img src="./img/ProjectArchive.png"
+         alt="Lost image ProjectArchive.png">
     <figcaption>Select Student version with .projectarchive extension</figcaption>
 </figure>
 
+<br>
 **.projectarchive** is to be seen as a *.zip* of all files you need for your project
 
-Many possibilies, you can try this:
+
 <figure>
     <img src="./img/StartSystemExtractInSameFolder.png"
          alt="Lost image StartSystemExtractInSameFolder.png">
@@ -73,68 +47,107 @@ Many possibilies, you can try this:
 </figure>
 
 Scan network to connect IDE with ctrlX Core.
-Double click on (1)
 
-A the end of the process the ctrlX (3) should be green too.
+<br>
+Double click on (1) 
+Select (2)
+Click on (3)
 
+
+<br>
 <figure>
-    <img src="./img/ScanNetworkForCtrlX.png"
-         alt="Lost image ScanNetworkForCtrlX">
+    <img src="./img/LoginCtrlxCoreStart.png"
+         alt="Lost image LoginCtrlxCoreStart.png">
     <figcaption>Scan Network For CtrlX</figcaption>
 </figure>
 
+<br>
+Enter username and password to login to ctrlX Core.
+
+Username : boschrexroth
+Password : Industrie_21
+
+<br>
 <figure>
-    <img src="./img/SelectDevice_ctrlx-CORE.png"
-         alt="Lost image SelectDevice_ctrlx-CORE">
-    <figcaption>Select Device ctrlx-CORE</figcaption>
+    <img src="./img/LoginCtrlxCore.png"
+         alt="Lost image LoginCtrlxCore.png">
+    <figcaption>Credentials</figcaption>
 </figure>
 
-Enter password to log to ctrlX Core
+<br>
+ After successfully logging in, the window should look like this.
 <figure>
-    <img src="./img/Device User Logon.png"
-         alt="Lost image Device User Logon.png">
+    <img src="./img/CredentialCtrlxCore.png"
+         alt="Lost image CredentialCtrlxCore.png">
     <figcaption>Device User Logon</figcaption>
 </figure>
 
-Enter password to log to ctrlX Core
+
+<br>
+
+# Code generation, login, and program startup
+
+<br>
 <figure>
-    <img src="./img/Generate Code Login Start Program.png"
-         alt="Lost image Generate Code Login Start Program.png">
-    <figcaption>Generate Code Login Start Program</figcaption>
+    <img src="./img/GenerateLoginConfig.png"
+         alt="Lost image GenerateLoginConfig.png">
+    <figcaption>Generate Code Login</figcaption>
 </figure>
 
-Ready !
 
-# Check if system is connected
-
-## Check if ctrlX Core is connected or ready.
-
+<br>
 <figure>
-    <img src="./img/ctrlX WORKS Engineering.png"
-         alt="Lost image ctrlX WORKS Engineering.png">
-    <figcaption>Open program ctrlX Works</figcaption>
-</figure>
-
-<figure>
-    <img src="./img/OpenCtrlX_Works_To_CheckConnectionWithCore.png"
-         alt="Lost image OpenCtrlX_Works_To_CheckConnectionWithCore">
-    <figcaption>CtrlX Works show you list of ctrlX Cores connected to your PC</figcaption>
-</figure>
-
-Click on ctrlX Core, it opens it in a Browser.
-You will need login: **boschrexroth** and password: **boschrexroth** to connect.
-*Maybe you need to select advanced and access unsage to connect.*
-
-When you are connected you have access to the core.
-
-<figure>
-    <img src="./img/StartSystemResetAlarms.png"
-         alt="Lost image StartSystemResetAlarms.png">
-    <figcaption>You can see and reset alarms here</figcaption>
+    <img src="./img/StartCode.png"
+         alt="Lost image StartCode.png">
+    <figcaption>Start Program</figcaption>
 </figure>
 
 
 
+
+<br>
+
+# Access to ctrlX-OS
+
+## By using CtrlX-Works
+
+<figure>
+    <img src="./img/CtrlxWorksWindow.png"
+         alt="Lost image CtrlxWorksWindow.png">
+    <figcaption>ctrlX-OS by using ctrlX-Works</figcaption>
+</figure>
+
+<br>
+Click on "ctrlX-OS" or "IP Address" (192.168.0.200)
+
+username: **boschrexroth**
+password: **Industrie_21**
+
+
+<br>
+When you are connected you have access to the ctrlX-OS.
+
+<figure>
+    <img src="./img/CtrlxOSWindow.png"
+         alt="Lost image CtrlxOSWindow.png">
+    <figcaption>CtrlX-OS</figcaption>
+</figure>
+
+<br>
+
+## By using a Browser
+
+<figure>
+    <img src="./img/CtrlxOSWithBrowser.png"
+         alt="Lost image CtrlxOSWithBrowser.png">
+    <figcaption>CtrlX-OS by using a browser</figcaption>
+</figure>
+
+
+username: **boschrexroth**
+password: **Industrie_21**
+
+When you are connected you have access to the ctrlX-OS.
 
 
 

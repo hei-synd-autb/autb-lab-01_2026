@@ -10,7 +10,7 @@ Cours AutB
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
-> Version 2025, V1.0
+> Version 2026, V1.0
 
 # LAB 01 Einführung in die Programmierung
 
@@ -72,10 +72,10 @@ CtrlX WORKS ist ein von Bosch Rexroth entwickeltes Softwarepaket zur Programmier
 Sie ermöglicht die Verwaltung von realen und virtuellen Geräten, die mit dem Entwicklungs-PC verbunden sind.
 ctrlX WORKS enthält eine integrierte Entwicklungsumgebung (IDE) für die Programmierung gemäß den in der Norm IEC 61131-3 beschriebenen Sprachen, die sich **ctrlX PLC Engineering** nennt.
 
-> Beim Schreiben dieses Dokuments verwendete Version von CtrlX WORKS: 1.20.11
+> Beim Schreiben dieses Dokuments verwendete Version von CtrlX WORKS: 3.6.3
 
-Link zum Herunterladen von ctrlX Works :
-[Rexroth Store CtrlX Works 1.20.11](https://community.boschrexroth.com/ctrlx-os-store-apps-oc2pqqwn/post/ctrlx-works-xOJLFLUiK4NGm5H)
+Link zum Herunterladen der Entwicklungsumgebung: :
+[Full development environment for ctrlX OS](https://community.boschrexroth.com/ctrlx-os-store-apps-oc2pqqwn/post/ctrlx-works-xOJLFLUiK4NGm5H?_gl=1*drczh*_ga*MTcwNTI2MzQwNS4xNzcxMjM2MzYz*_ga_1TJGXV7Q4B*czE3NzEyMzYzNjIkbzEkZzEkdDE3NzEyMzY1MzYkajM1JGwwJGgw*_ga_6YFL8JVC3S*czE3NzEyMzYzNjIkbzEkZzEkdDE3NzEyMzY1MzYkajM1JGwwJGgw)
 
 
 <br>
@@ -142,11 +142,11 @@ Einige Schlüsselmerkmale von Node-RED :
 Damit Node-RED funktionieren kann, muss zuvor die JavaScript-Laufzeitumgebung „Node.js“ installiert werden.
 --> [Download Node.js](https://nodejs.org/en/download/current)
 
-Die Installation dieser Umgebung wurde bereits auf den PCs des Automatisierungslabors durchgeführt.
+Bemerkung : Die Installation dieser Umgebung wurde bereits auf den PCs des Automatisierungslabors durchgeführt.
 
 Stattdessen **müssen Sie „Node-RED“ auf dem PC des Automatisierungslabors** installieren, indem Sie das folgende Verfahren befolgen.
 Im Anschluss an diese Installation wird Ihre Node-RED-Umgebung installiert.
-in Ihrem eigenen Benutzerprofil unter C:\Users[dein_benutzername].node-red.
+in Ihrem eigenen Benutzerprofil unter C:\Users\\*Your_Username*\\.node-red.
 
 
 <br>
@@ -159,14 +159,13 @@ in Ihrem eigenen Benutzerprofil unter C:\Users[dein_benutzername].node-red.
 
 - Öffnen Sie die „Eingabeaufforderung“ (cmd.exe).
 - Geben Sie den Befehl ein: ``npm install -g --unsafe-perm node-red``.
-- Überprüfen Sie die Versionen von Node.js und Node-RED mit dem Befehl: node-red --version.
 
-Wenn die Softwareversionen nicht angezeigt werden, führen Sie den Installationsvorgang erneut durch, verwenden Sie jedoch „Windows PowerShell“ statt der „Eingabeaufforderung“.
 
 <br> 
 2) Starten Sie Node-RED  
 
 - Öffnen Sie die Eingabeaufforderung (cmd.exe).
+- Geben Sie den Befehl ein: cd C:\Users\\*Your_Username*\\AppData\Roaming\npm
 - Geben Sie den Befehl ein: node-red
 
 <br>
@@ -201,12 +200,12 @@ Wenn die Softwareversionen nicht angezeigt werden, führen Sie den Installations
 Drücken Sie im Fenster der Eingabeaufforderung die Tastenkombination Ctrl + C oder schließen Sie das Fenster der Eingabeaufforderung.
 
 
-*Bitte beachten Sie: Nachdem Sie Node-RED zum ersten Mal gestartet haben, werden die Konfigurationsdateien und Streams unter C:\Users\[ton_nom_utilisateur]\.node-red.
+*Bitte beachten Sie: Nachdem Sie Node-RED zum ersten Mal gestartet haben, werden die Konfigurationsdateien und Streams unter C:\Users\\*Your_Username*\\.node-red.
 
 <br> 
 6) Kopieren Sie die zur Verfügung gestellte Basisdatei „flows.json“.
 
-Ersetze die Datei „flows.json“, die sich im Verzeichnis C:\Users\[ton_benutzername]\.node-red befindet, durch die Datei „flows.json“, die in GitLab zur Verfügung gestellt wird.
+Ersetze die Datei „flows.json“, die sich im Verzeichnis C:\Users\\*Your_Username*\\.node-red befindet, durch die Datei „flows.json“, die in Github zur Verfügung gestellt wird.
 
 <br>
 7) Node-Red neu starten --> siehe Punkt 2)
@@ -320,6 +319,7 @@ Der Data Layer speichert die Daten nicht direkt, sondern fungiert als Vermittler
 
 1) Starten Sie Node-RED.
 - Öffnen Sie die Eingabeaufforderung (cmd.exe).
+- Geben Sie den Befehl ein: cd C:\Users\\*Ihr_Benutzername*\\AppData\Roaming\npm
 - Geben Sie den Befehl ein: node-red
 
 <br>
@@ -834,9 +834,5 @@ Um das Signal zu visualisieren :
 
 Was stellen Sie fest, wenn Sie das auf „Node-RED“ angezeigte Sinussignal mit dem mit „Trace“ angezeigten Signal vergleichen ?
 
-
-# Information
-
-> Auf Anfrage kann die Software „ctrlX Works“ zur Installation auf Ihrem Laptop (nur Windows!) zur Verfügung gestellt werden.
-> 
+ 
 
