@@ -245,13 +245,18 @@ Einen Zähler in eine Aufgabe implementieren und überprüfen, ob die Aufgabe zy
 ## Implementieren Sie das folgende Programm in der SPS.
 
 
+
 ```iecst
 PROGRAM PLC_PRG
 VAR
-    iCount    : UINT := 3;
+    iCount    : UINT := 0;
 END_VAR
 
-iCount := iCount + 1;
+IF iCount < 100 THEN
+    iCount := iCount + 1;
+    ELSE
+        iCount := 0;
+END_IF
 ```
 
 

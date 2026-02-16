@@ -241,10 +241,14 @@ Ouvrir ctrlX PLC Engineering et effectuer la procédure suivante :
 ```iecst
 PROGRAM PLC_PRG
 VAR
-    iCount    : UINT := 3;
+    iCount    : UINT := 0;
 END_VAR
 
-iCount := iCount + 1;
+IF iCount < 100 THEN
+    iCount := iCount + 1;
+    ELSE
+        iCount := 0;
+END_IF
 ```
 
 
@@ -529,7 +533,7 @@ VAR
 	startFromNodeRed : BOOL;
 	stopFromNodeRed : BOOL;
 	rTrigStart	: R_TRIG;
-        rTrigStop   : R_TRIG;
+    rTrigStop   : R_TRIG;
 
 END_VAR
 
