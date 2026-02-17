@@ -305,12 +305,12 @@ Damit auf eine Variable von Node-RED aus zugegriffen werden kann, muss der Compi
    
 
 <figure>
-    <img src="./img/SymbolConfig.png"
+    <img src="./img/SymbolConfiguration.png"
          alt="Configure Symbol Configuration">
     <figcaption>Configure Symbol Configuration</figcaption>
 </figure>
 
-> Wenn das Symbol **Symbol Konfiguration** nicht vorhanden ist, müssen Sie es hinzufügen, indem Sie in IDE --> Tab --> Project --> Add Object --> Symbol Configuration...
+> Wenn das Symbol **Symbol Konfiguration** nicht vorhanden ist, müssen Sie es hinzufügen, indem Sie in Menu --> Project --> Add Object --> Symbol Configuration...
 
 
 Beim nächsten Herunterladen des Programms wird die Variable „iCount“ im **Data Layer** (*) des CtrlX-Core von Node-RED aus zugänglich sein.

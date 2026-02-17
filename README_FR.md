@@ -298,7 +298,7 @@ Pour qu'une variable soit accessible depuis Node-RED, il faut en informer le com
    
 
 <figure>
-    <img src="./img/SymbolConfig.png"
+    <img src="./img/SymbolConfiguration.png"
          alt="Configure Symbol Configuration">
     <figcaption>Configure Symbol Configuration</figcaption>
 </figure>
