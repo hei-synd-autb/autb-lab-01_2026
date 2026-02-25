@@ -226,7 +226,7 @@ Vous devriez obtenir l'interface utilisateur suivante :
 # Votre premier programme
 
 <u>Objectif </u> :
-Implémenter un compteur dans une tâche et vérifier que cette dernière est exécutée cyliquement.
+Implémenter un compteur dans une tâche et vérifier que cette dernière est exécutée cycliquement.
 
 
 <u>Prérequis </u> :
@@ -426,7 +426,7 @@ Ajouter le noeud **gauge** et le configurer comme suit :
 <br>
 
 <figure>
-    <img src="./img/Gauge.png"
+    <img src="./img/gauge.png"
          alt="Sélection noeud gauge">
     <figcaption>Sélection noeud gauge</figcaption>
 </figure>
