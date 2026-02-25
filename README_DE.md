@@ -300,7 +300,7 @@ Damit auf eine Variable von Node-RED aus zugegriffen werden kann, muss der Compi
 
 1. Wählen Sie **Symbol Konfiguration**.
 2. Klicken Sie auf „Build“.
-3. Aktivieren Sie die Variable „iCount“.
+3. **Aktivieren** Sie die Variable „iCount“.
 
    
 

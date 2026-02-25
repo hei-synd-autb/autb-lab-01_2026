@@ -293,7 +293,7 @@ Pour qu'une variable soit accessible depuis Node-RED, il faut en informer le com
 
 1. Sélectionner **Symbol Configuration**
 2. Cliquer sur "Build".
-3. Sélectionner la variable "iCount"
+3. **Sélectionner** la variable "iCount"
 
    
 
