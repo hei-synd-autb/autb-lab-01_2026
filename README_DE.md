@@ -434,7 +434,7 @@ Fügen Sie den Knoten **gauge** hinzu und konfigurieren Sie ihn wie folgt:
 <br>
 
 <figure>
-    <img src="./img/Gauge.png"
+    <img src="./img/gauge.png"
          alt="Sélection noeud gauge">
     <figcaption>Auswahl Gauge-Knoten</figcaption>
 </figure>
