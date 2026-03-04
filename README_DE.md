@@ -160,6 +160,12 @@ in Ihrem eigenen Benutzerprofil unter C:\Users\\*Your_Username*\\.node-red.
 - Öffnen Sie die „Eingabeaufforderung“ (cmd.exe).
 - Geben Sie den Befehl ein: ``npm install -g --unsafe-perm node-red``.
 
+:bulb: Alternative is to use the **Node.js command prompt** to start node-red in the folder where is the ``flows.json`` file of the lab..
+
+```js
+> cd C:\Users\firstname.secondname\Documents\GitHub @ HEVS\autb-lab-01_2026\PracticalWork_01_Student
+> node-red
+```
 
 <br> 
 2) Starten Sie Node-RED  

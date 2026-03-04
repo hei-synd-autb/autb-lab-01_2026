@@ -162,6 +162,13 @@ dans votre propre profil utilisateur sous C:\Users\\*Your_Username*\\.node-red.
 - Entrer la commande : cd C:\Users\\*Your_Username*\\AppData\Roaming\npm
 - Entrer la commande : node-red
 
+:bulb: Alternative is to use the **Node.js command prompt** to start node-red in the folder where is the ``flows.json`` file of the lab..
+
+```js
+> cd C:\Users\firstname.secondname\Documents\GitHub @ HEVS\autb-lab-01_2026\PracticalWork_01_Student
+> node-red
+```
+
 <br>
 3) Accèder à l'interface utilisateur de Node-RED  
 
